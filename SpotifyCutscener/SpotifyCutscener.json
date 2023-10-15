@@ -1,0 +1,17 @@
+{
+  "Author": "Krya",
+  "Name": "Spotify Cutscener",
+  "RepoUrl": "https://github.com/kry-a/SpotifyCutscener",
+  "Punchline": "Automatically pauses Spotify when in a cutscene :)",
+  "Description": "Allows you to automatically pause Spotify when in a cutscene, and resume it when the cutscene is over.",
+  "InternalName": "SpotifyCutscener",
+  "AssemblyVersion": "any",
+  "ApplicableVersion": "any",
+  "IconUrl": "https://raw.githubusercontent.com/kry-a/SpotifyCutscener/main/Imagges/icon.png",
+  "Tags": [
+    "cutscene",
+    "spotify",
+    "music",
+    "sound"
+  ]
+}

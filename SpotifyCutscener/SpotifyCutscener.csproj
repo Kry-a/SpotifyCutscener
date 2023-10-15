@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="Dalamud.Plugin.Bootstrap.targets" />
+
+  <PropertyGroup>
+    <Authors>Krya</Authors>
+    <Company>Krya</Company>
+    <Version>0.0.1.0</Version>
+    <Description>Automatically pauses Spotify when in a cutscene.</Description>
+    <Copyright>Krya</Copyright>
+    <PackageProjectUrl>https://github.com/kry-a/SpotifyCutscener</PackageProjectUrl>
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DalamudPackager" Version="2.1.12" />
+  </ItemGroup>
+
+  <Target Name="PackagePlugin" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <DalamudPackager
+      ProjectDir="$(ProjectDir)"
+      OutputPath="$(OutputPath)"
+      AssemblyName="$(AssemblyName)"
+      MakeZip="true"/>
+  </Target>
+</Project>
